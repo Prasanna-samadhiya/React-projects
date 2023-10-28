@@ -3,8 +3,8 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store/store';
-import Home from './pages/Home';
-import Cart from './pages/Cart';
+import Home from './pages/Home1';
+import Cart from './pages/Cart1';
 import Navbar from './components/Navbar';
 
 function App2() {
