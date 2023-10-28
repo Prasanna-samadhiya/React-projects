@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './app.css'
 
 function Form2() {
   const [student, setStudent] = useState({})
