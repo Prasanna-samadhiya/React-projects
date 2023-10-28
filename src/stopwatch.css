@@ -1,0 +1,28 @@
+.stopwatch-container{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    border: 3px solid green;
+	width: 40vh;
+	height: 30vh;
+}
+.stopwatch-time{
+    border: 3px solid green;
+    padding: 5px;
+}
+.stopwatch-buttons{
+    display: flex;
+    justify-content: center;
+}
+.stopwatch-button{
+    border: 3px solid green;
+}
+.container{
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 200vh;
+	height: 100vh;
+}
