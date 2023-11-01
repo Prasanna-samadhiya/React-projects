@@ -12,6 +12,7 @@ import Search from "./search";
 import './index.css'
 import Cart from "./Gallery/pages/Cart1";
 import Home from "./Gallery/pages/Home1";
+import Home1 from "./Home";
 const value1=createContext();
 function Main1() {
   
@@ -49,7 +50,7 @@ function Main1() {
             <div className="content">
              <value1.Provider value={name1}>
               <Routes>
-              <Route path="/" element={<Home />}/>
+              <Route path="/" element={<Home1 />}/>
               <Route path="/search" element={<Search/>}/>
               <Route path="/swap" element={<App12 />}/>
               <Route path="/FtechButton" element={<FetchButton />}/>

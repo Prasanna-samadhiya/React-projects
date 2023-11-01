@@ -32,14 +32,23 @@ const Products = () => {
         return <h2>Something went wrong!</h2>;
     }
     return (
-        <div className="productsWrapper">
+        <div className="productsWrapper" style={{display:"flex",flexDirection:"row",flexWrap:"wrap",width:"900px"}}>
             {products.map((product) => (
-                <div className="card" key={product.id}>
+                <div>
+                <div className="card" 
+                style={{
+                    border:"2px solid",
+                    width:"220px",
+                    margin:"10px 10px 10px 10px",
+                    height:"350px",
+                    borderRadius:"10px"
+                    }} key={product.id}>
                     <img src={product.thumbnailUrl} alt="" />
                     <h4>{product.title}</h4>
                     <button onClick={() => handleAdd(product)} className="btn">
                         Whishlist
                     </button>
+                </div>
                 </div>
             ))}
         </div>

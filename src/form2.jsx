@@ -64,17 +64,17 @@ return (
     <div>
       <p>name:</p>
       <input onChange={handleName}></input>
-      <p style={{display:student.name==""?"flex":"none",color:"red",}}>Enter something</p>
+      <p style={{display:student.name==""?"flex":"none",color:"red",padding:"0px 0px 0px 275px"}}>Enter something</p>
     </div>
     <div >
       <p>email:</p>
       <input type={"email"} onChange={handleEmail}></input>
-      <p style={{display:student.add=="Invalid"?"flex":"none",color:"red",}}>Enter a valid email</p>
+      <p style={{display:student.add=="Invalid"?"flex":"none",color:"red",padding:"0px 0px 0px 275px"}}>Enter a valid email</p>
     </div>
     <div >
       <p>Mobile number:</p>
       <input onChange={handleNo}></input>
-      <p style={{display:student.clg=="Invalid"?"flex":"none",color:"red",}}>Enter a valid mobile number</p>
+      <p style={{display:student.clg=="Invalid"?"flex":"none",color:"red",padding:"0px 0px 0px 240px"}}>Enter a valid mobile number</p>
     </div>
     <div>
       <p>branch:</p>

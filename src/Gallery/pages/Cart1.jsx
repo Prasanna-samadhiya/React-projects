@@ -12,9 +12,16 @@ const Cart = () => {
     return (
         <div>
             <h3>Whishlist</h3>
-            <div className="cartWrapper">
+            <div className="cartWrapper" style={{display:"flex",flexDirection:"row",flexWrap:"wrap",width:"900px"}}>
                 {products.map((product) => (
-                    <div key={product.id} className="cartCard">
+                    <div key={product.id} className="cartCard" style={{
+                    border:"2px solid",
+                    width:"220px",
+                    margin:"10px 10px 10px 10px",
+                    height:"260px",
+                    borderRadius:"10px",
+                    padding:"10px 10px 10px 10px"
+                    }}>
                         <img src={product.thumbnailUrl} alt="" />
                         <h5>{product.title}</h5>
                         <button

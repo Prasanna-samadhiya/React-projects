@@ -117,41 +117,44 @@ const ToDo = () => {
               alignItems: "center",
               border:"3px solid",
               borderRadius:"15px",
+              padding:"5px 5px 5px 5px",
+              margin:"5px 5px 5px 5px"
               }}
             >
           <div style={{ display: "flex", columnGap: "8px" }}>
             <input type="checkbox" onChange={() => handleCheckbox(index)} />
-               <h3
+               <h4
               style={{
                    textDecoration: item.isCompleted ? "line-through" : "none",
                   }}
                 >
               {item.taskName}
-                 </h3>
+                 </h4>
                 
               </div>
-              
+              <div>
               <div onClick={() => handleEdit(index)}
               style={{ display:"flex",cursor: "pointer",float:"inline-end" }}>
-                <i className="fa fa-pencil">edit<div onChange={(e)=>{seteditedValue(e.target.value)}} 
+                <i className="fa fa-pencil"><div onChange={(e)=>{seteditedValue(e.target.value)}} 
                 style={{
-                  display: isEditable ? "flex" : "none"
+                  display: isEditable ? "flex" : "none",
                 }}>
-                <input onChange={(e)=>{item.taskName=e.target.value}}></input>
+                <input style={{height:"23px"}} onChange={(e)=>{item.taskName=e.target.value}}></input>
                 </div>
                 </i>
               </div>
               <div  style={{
-                  display: isEditable ? "flex" : "none",
+                  display: isEditable ? "flex" : "none",padding:"12px 0px 0px 0px",
                 }}>
-              <button onClick={()=>{setisEditable(false)}}><i className="bi bi-check"></i>ok</button>
-                <button onClick={()=>{setisEditable(false)}}><i className="bi bi-x"></i>cancel</button>
+              <button onClick={()=>{setisEditable(false)}}><i className="fa fa-check"></i></button>
+                <button onClick={()=>{setisEditable(false)}}><i className="fa fa-close"></i></button>
+                </div>
                 </div>
             <div
               onClick={() => handleDelete(index)}
               style={{ cursor: "pointer" }}
             >
-            <i className="fa fa-trash">Delete</i>
+            <i className="fa fa-trash"></i>
            </div>
          </div>
         ))}

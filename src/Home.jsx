@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { value1 } from "./main1";
 
-function Home() {
+function Home1() {
   
     
   const data= useContext(value1)
@@ -16,4 +16,4 @@ function Home() {
   
 }
  
-export default Home;
+export default Home1;
